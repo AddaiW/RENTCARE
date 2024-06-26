@@ -1,0 +1,225 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul {
+    background-color: #FFF5EA;
+    margin: 0;
+    padding: 0;
+    font-family: 54px 'Playfair Display',Lato, sans-serif; /* Use Sans Serif font family for better readability */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    padding-bottom: 100px; /* Add padding to the bottom to prevent cutting off content */
+}
+
+
+/* Customize headings */
+h1, h2, h3 {
+    font-weight: bold; /* Make headings bold */
+    margin-bottom: 10px; /* Add some space below headings */
+}
+
+h1 {
+    font-size: 24px; /* Increase font size for main headings */
+}
+
+h2 {
+    font-size: 20px; /* Font size for subheadings */
+}
+
+h3 {
+    font-size: 18px; /* Font size for sub-subheadings */
+}
+
+/* Customize paragraphs */
+p {
+    margin-bottom: 15px; /* Add some space below paragraphs */
+    font-size: 16px; /* Set font size for paragraphs */
+}
+
+/* Customize links */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Set link color to blue */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Full-page layout */
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+.sponsors {
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    width: 100%;
+}
+
+.sponsor-container {
+    display: flex;
+    justify-content: center; /* Center align images horizontally */
+    align-items: center; /* Center align images vertically */
+    transition: transform 1s ease; /* Smooth transition */
+    flex-direction: column; /* Display images vertically */
+}
+
+.sponsor-container img {
+    width: auto; /* Ensure images fill container */
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-button {
+    background-color: transparent;
+    background-image: url(/__resources/img/rw_logo.1aa3b25….svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    bottom: auto;
+    height: 84px;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+    width: auto;
+    z-index: 10;
+
+}
+
+.menu-button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Initially hidden */
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    z-index: 999; /* Ensure menu is above other content */
+    transition: left 0.3s ease;
+}
+
+.menu.active {
+    left: 0; /* Display menu */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.popup-menu {
+    position: fixed;
+    top: 20px;
+    left: -200px; /* Initially hidden */
+    width: 180px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 0.3s ease;
+}
+
+.popup-menu.active {
+    left: 20px; /* Display menu */
+}
+
+.popup-menu ul {
+    list-style: none;
+}
+
+.popup-menu ul li {
+    margin-bottom: 10px;
+}
+
+.popup-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.property-managers {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    max-width: auto;
+    height: 180px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 10px; 
+    top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Display sections vertically */
+    height: 100vh; /* Set container height to full viewport height */
+}
+
+/* Additional styles for images */
+.img {
+    max-width: 80%;
+    height: 50px;
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Styles for staff profiles */
+.staff-profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    margin-top: 20px; /* Adjust spacing from paragraph section */
+}
+
+.staff-profiles .profile {
+    text-align: center;
+    margin: 0 15px; /* Adjust spacing between profiles */
+    padding-bottom: 50px;
+}
+
+.staff-profiles img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add spacing between image and name */
+    cursor: pointer;
+}
+
+.staff-profiles span {
+    display: block;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.staff-info-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: none; /* Initially hidden */
+}
+

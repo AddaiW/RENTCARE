@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentCare and BuildCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sponsors section with automatic scrolling -->
+    <div class="sponsors">
+        <div class="sponsor-container" id="sponsor-container">
+            <img src="images/UHRamsRugby.jpg" alt="Upper Hutt Rams Rugby" style="max-width: 10%; height: 100px" onclick="window.location.href='#UHRamsRugby'">
+            <img src="images/UHRamsNetball.jpg" alt="Upper Hutt Rams Netball" style="max-width: 10%; height: 100px" onclick="window.location.href='#UHRamsNetball'">
+            <img src="images/Brewtown.jpg" alt="Brewtown" style="max-width: 10%; height: 100px" onclick="window.location.href='#Brewtown'">
+           <!-- <img src="#" alt="Anita'sDancwAcademy" > -->
+        </div>
+    </div>
+
+    <!-- Menu button -->
+    <div class="menu-button" onclick="toggleMenu()">
+        <img src="images/RentCareLogo.png" alt="RentCare_menu-button" style="max-height: 35%; padding-top:15px;">
+    
+    </div>
+
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <ul>
+            <img src="images/RentCareLogo.png" alt="RentCare_menu-button" style="height: 10%; max-width:auto; padding: 15px;" >
+            <li><br></li>
+            <li><a href="/pages/story.html">Our story</a></li>
+            <li><a href="/pages/offers.html">Our Offers</a></li>
+            <li><a href="/pages/commHousing.html">Community housing</a></li>
+            <li><a href="/pages/different.html">What we do different</a></li>
+            <li><a href="/pages/map.html">Map of houses we manage</a></li>
+            <li><a href="/pages/360inspection.html">360 Inspection</a></li>
+        </ul>
+    </div>
+
+    <!-- Popup menu -->
+    <div class="popup-menu">
+        <ul>
+            <li><a href="/pages/rentcare.html">RentCare</a></li>
+            <li><a href="#buildcare">BuildCare</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+
+    <!-- Main sections for RentCare and BuildCare -->
+    <a href="pages/rentcare.html" class="rentcare">  
+        <section class="rentcare">
+            <img src="images/RentCareLogo.png" alt="RentCare Logo" style="max-width: 100%; max-height: 100%; position: fixed; z-index: 1;">
+            <img class="watermarked1" src="images/wellington.jpg" alt="WellingtonPhoto" style="max-width: 100%; max-height: 100%;">
+        </section>
+    </a>
+    <a href="pages/buildcare.html" class="buildcare">
+        <section class="buildcare" onclick="window.location.href='buildcare_website_url'">
+            <img src="images/BuildCareLogo.png" alt="BuildCare Logo" style="max-width: 100%; max-height: 100%; position: fixed; z-index: 1">
+            <img class="watermarked2" src="images/builder.jpg" alt="Builder" style="max-width: 100%; max-height: 100%;">
+        </section>
+    </a>
+        <!-- Paragraph section -->
+        <section class="paragraph">
+            <h1>Apply Property</h1>
+            <h1>Current Listing</h1>
+            <h1>Request BuildCare</h1>
+            <h1>Maintenance Form</h1>
+        </section> 
+
+        <!-- Staff info popup container -->
+        <div class="staff-info-popup" id="staff-info-popup">
+            <!-- Staff info content will be displayed here -->
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
